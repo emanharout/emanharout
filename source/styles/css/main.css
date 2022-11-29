@@ -1,5 +1,5 @@
 .logo {
-  font-family: 'Merriweather', serif;
+  font-family: "Merriweather", serif;
   font-weight: 400;
   letter-spacing: 2px;
 }
@@ -9,7 +9,7 @@ nav li {
 }
 
 .main-nav a {
-  font-family: 'Merriweather', serif;
+  font-family: "Merriweather", serif;
   font-size: 2rem;
   text-decoration: none;
   line-height: 1.5;
@@ -24,12 +24,6 @@ nav li {
     display: inline-block;
   }
 }
+/*# sourceMappingURL=main.css.map */
 
-@media only screen and (min-width: 768px), 
-only screen and (min-width: 700px) and (orientation: landscape) {
-  
-}
-
-@media only screen and (min-width: 1140px) {
-  
-}
+/*# sourceMappingURL=main.css.map */
