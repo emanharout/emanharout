@@ -1,0 +1,35 @@
+.logo {
+  font-family: 'Merriweather', serif;
+  font-weight: 400;
+  letter-spacing: 2px;
+}
+
+nav li {
+  list-style-type: none;
+}
+
+.main-nav a {
+  font-family: 'Merriweather', serif;
+  font-size: 2rem;
+  text-decoration: none;
+  line-height: 1.5;
+  color: rgb(50, 50, 50);
+  background-color: rgba(154, 213, 211, 0.603);
+  padding: 5px;
+  display: inline-block;
+}
+
+@media only screen and (min-width: 480px) {
+  .main-nav li {
+    display: inline-block;
+  }
+}
+
+@media only screen and (min-width: 768px), 
+only screen and (min-width: 700px) and (orientation: landscape) {
+  
+}
+
+@media only screen and (min-width: 1140px) {
+  
+}
