@@ -2,8 +2,9 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>Eman Harout</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> {{ title }} </title>
+
     <link rel="stylesheet" href="/styles/css/normalize.css">
     <link rel="stylesheet" href="/styles/css/main.css">
     
@@ -13,6 +14,9 @@
 
 </head>
 <body>
-    {% include "_includes/template-parts/site-header.html" %}
+    {% include "source/_includes/template-parts/header.njk" %}
+    <main>
+     {{ content | safe }}
+    </main>
 </body>
 </html>
