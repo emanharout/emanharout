@@ -9,9 +9,12 @@ module.exports = function (eleventyConfig) {
     throwOnUndefined: true,
     autoescape: false,
   });
+
   eleventyConfig.addFilter("postDate", (dateObj) => {
     return DateTime.fromJSDate(dateObj).toLocaleString(DateTime.DATE_MED);
   })
+
+  eleventyConfig.addShortcode("currentYear", () => `${new Date().getFullYear()}`);
 
   return {
     dir: {

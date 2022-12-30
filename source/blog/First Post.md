@@ -15,3 +15,11 @@ I have a huge list of things to do.
 
 * Do this.
 * Then that.
+
+We have some **bold** text. We can also ==highlight== text.
+
+```swift
+    func doThing() -> String {
+        ==print("Hello")==
+    }
+```

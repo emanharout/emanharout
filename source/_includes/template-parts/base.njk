@@ -15,8 +15,11 @@
 </head>
 <body>
     {% include "source/_includes/template-parts/header.njk" %}
-    <main>
+    <main class="content">
      {{ content | safe }}
     </main>
+    <footer class="main-footer">
+        <p>Copyright © {% currentYear %} Eman Harout</p>
+    </footer>
 </body>
 </html>

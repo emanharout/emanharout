@@ -2,11 +2,11 @@
 layout: template-parts/base.njk
 ---
 
-<article>
-    <figure class="featured-image">
-        <img src="{{ image }}" alt="{{ imageAlt }}">
-        <figcaption>{{ imageAlt }}</figcaption>
-    </figure>
+<article class="article-container">
+    {# <figure> #}
+        {# <img src="{{ image }}" alt="{{ imageAlt }}" class="featured-image"> #}
+        {# <figcaption>{{ imageAlt }}</figcaption> #}
+    {# </figure> #}
     <h1> {{ title }} </h1>
     {{ content | safe }}
 </article
