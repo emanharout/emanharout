@@ -1,7 +1,7 @@
 .logo {
-  font-family: "Merriweather", serif;
-  font-weight: 400;
-  letter-spacing: 2px;
+  font-family: "$site-main-nav-font";
+  font-weight: 500;
+  letter-spacing: 1px;
   text-align: center;
   padding: 16px 0px 2px;
   margin-block-start: 0;
@@ -38,7 +38,8 @@
 }
 
 .main-nav a {
-  font-family: "Merriweather", serif;
+  font-family: "Frank Ruhl Libre", serif;
+  font-weight: 400;
   font-size: 1.5rem;
   text-decoration: none;
   line-height: 1.5;
@@ -84,7 +85,7 @@ body {
 
 .main-footer {
   flex-shrink: 0;
-  background-color: hsl(245deg, 79%, 52%);
+  background-color: hsl(262deg, 69%, 31%);
 }
 .main-footer p {
   color: white;
