@@ -1,3 +1,38 @@
+@import "variables.css";
 
+/* ## GENERAL */
+/* ### Set HTML Properties */
+*, *::before, *::after {
+  box-sizing: inherit;
+}
 
-/*# sourceMappingURL=foundation.css.map */
+html {
+  box-sizing: border-box;
+  font-family: var(--body-font);
+  font-size: 1.125rem;
+}
+/* ### END: Set HTML Properties */
+
+/* ### Font Setup */
+h1, h2, h3, h4, p {
+  margin: 0;
+}
+
+h2, h3 {
+  font-family: var(--title-font);
+  line-height: 0.8;
+}
+
+h2 {
+  font-size: 4rem;
+}
+
+p {
+  margin-bottom: 0.85rem;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+/* ### END: Font Setup */
