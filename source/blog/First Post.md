@@ -9,6 +9,8 @@ description: Some lengthy description of the post that runs multiple sentences l
 
 # My First Post
 
+![some image](/assets/blog/article-1.jpg)
+
 This is my first post.
 
 I have a huge list of things to do.

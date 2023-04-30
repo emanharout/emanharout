@@ -13,26 +13,105 @@ html {
 }
 /* ### END: Set HTML Properties */
 
-/* ### Font Setup */
-h1, h2, h3, h4, p {
+body {
   margin: 0;
+  padding: 0;
+  line-height: 1.5;
 }
 
-h2, h3 {
+/* ### Font Setup */
+/* Wrap large headings so they don't overflow from container & break layout */
+h1, h2, h3, h4, h5, h6 {
   font-family: var(--title-font);
-  line-height: 0.8;
+  word-wrap: break-word;
+  white-space: normal;
+  line-height: 1;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
 }
 
 h2 {
-  font-size: 4rem;
+  letter-spacing: 1px;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.75rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+h4 {
+  font-size: 1.25rem;
+}
+
+h5 {
+  font-size: 1.175rem;
+  letter-spacing: 0.5px;
+  font-weight: 500;
+}
+
+h6 {
+  font-size: 1.15rem;
+  font-weight: 500;
+  letter-spacing: 0.25px;
+}
+
+@media only screen and (min-width: 480px) {
+  h1 {
+    font-size: 2.75rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+  
+  h3 {
+    font-size: 1.75rem;
+  }
+  
+  h4 {
+    font-size: 1.5rem;
+  }
+  
+  h5 {
+    font-size: 1.475rem;
+  }
+  
+  h6 {
+    font-size: 1.425rem;
+  }
 }
 
 p {
-  margin-bottom: 0.85rem;
+  margin: 0 0 1rem;
+  padding: 0;
+}
+
+/* Remove the bottom-margin of the last paragraph in a container */
+p:last-child, a:last-child {
+  margin-bottom: 0;
+}
+
+/* e.g. apply class to paragraphs to remove bottom margin */
+.margin-bottom-0 {
+  margin-bottom: 0;
 }
 
 img {
   display: block;
   max-width: 100%;
+}
+
+a {
+  text-decoration: none;
 }
 /* ### END: Font Setup */

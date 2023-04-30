@@ -66,4 +66,13 @@
   --site-main-nav-font: 'Frank Ruhl Libre', serif;
   --title-font: 'Frank Ruhl Libre', serif;
   --body-font: 'Inter', sans-serif;
+
+  /* Layout */
+  --outer-horizontal-margin: 1rem;
+  --outer-horizontal-padding: 1rem;
+  /* TODO: Pick final article-text-width value based on readability */
+  --article-text-width: 40rem;
+  /* TODO: Remove if still not in Use */
+  --article-expanded-content-width: calc(var(--article-text-width) + var( --outer-horizontal-margin) + var(--outer-horizontal-margin));
+  --article-full-content-negative-horizontal-margin: calc(var(--outer-horizontal-margin) * -1);
 }

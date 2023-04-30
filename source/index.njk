@@ -3,10 +3,24 @@ title: Home
 layout: template-parts/base.njk
 ---
 
-<h1>Home</h1>
+<section class="about-me">
+    <header class="about-me__intro">
+        <h2 class="section-title-small">Hi, my name is Eman</h2>
+    </header>
+    <div class="about-me__body">
+        {# TODO: Fill Out #}
+        <p>I write about such and such. Lorem ipsum paragraph one.</p>
+        <p>Lorem ipsum paragraph two. More text will go here later</p>
+    </div>
+</section>
 
-<ul class="blog-list">
+<section class="blog-collection"> {# TODO: Add section class name #}
+<header class="blog-collection__header">
+    {# TODO: Add section introduction/title #}
+</header>
+<ul class="blog-collection__list">
     {%- for post in collections.post | reverse -%}
          {% include 'article-collection-item.njk' %}
     {%- endfor -%}
 </ul>
+</section>

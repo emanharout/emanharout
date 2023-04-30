@@ -3,10 +3,13 @@ title: Blog
 layout: template-parts/base.njk
 ---
 
-<h1>Eman's Blog</h1>
-
-<ul class="blog-list">
-    {%- for post in collections.post | reverse -%}
-         {% include 'article-collection-item.njk' %}
-    {%- endfor -%}
-</ul>
+<section class="blog">
+    <header class="blog-collection__header">
+        <h1>Eman's Blog</h1>
+    </header>
+    <ul class="blog-collection__list">
+        {%- for post in collections.post | reverse -%}
+             {% include 'article-collection-item.njk' %}
+        {%- endfor -%}
+    </ul>
+</section>

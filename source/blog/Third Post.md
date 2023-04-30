@@ -13,14 +13,24 @@ description: Some lengthy description of the post that runs multiple sentences l
 Metatypes can be difficult to grasp, both in concept and application. My hope is that after reading this, you’ll have mastered the basics of metatypes!
 
 ## Instances & Types
-(img)
+
 To understand metatypes, it helps to start with the familiar. For example, just as `String` is the type of `"Hello World"`, `String.Type` is the type of `String.self`. While `String` is the type of an instance, `String.Type` is the type of a type—hence the name “metatype”.
 
 ### Header Three
 
 Here is an illustration in code:
-let myString: String = "Hello World!"
+
+```swift
+let myString: String = <span>"Hello World!"</span>
 let myStringType: String.Type = String.self
+```
+
+Here is a second piece of code:
+
+```swift
+let bla: String = "Hello"
+let anotherStr: String = "World!"
+```
 
 And since a metatype is a type, we can specify it as such in function signatures:
 func doSomething(with type: String.Type) { ... } // Specify a metatype parameter
