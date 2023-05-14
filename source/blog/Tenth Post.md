@@ -1,7 +1,7 @@
 ---
-title: Introduction to Swift Metatypes 3
+title: Introduction to Swift Metatypes 10
 author: Eman Harout
-date: 2022-05-03
+date: 2022-05-10
 image: /assets/blog/article-2.jpg
 imageAlt: This is a test
 description: Some lengthy description of the post that runs multiple sentences long goes here.
@@ -9,7 +9,7 @@ description: Some lengthy description of the post that runs multiple sentences l
 
 ![some image](/assets/blog/article-2.jpg)
 
-# Introduction to Swift Metatypes 3
+# Introduction to Swift Metatypes 10
 Metatypes can be difficult to grasp, both in concept and application. My hope is that after reading this, you’ll have mastered the basics of metatypes!
 
 ## Instances & Types
