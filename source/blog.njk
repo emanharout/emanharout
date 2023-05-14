@@ -1,15 +1,59 @@
 ---
 title: Blog
 layout: template-parts/base.njk
+pagination:
+    data: collections.post
+    size: 2
+    alias: posts
+    reverse: true
 ---
 
 <section class="blog">
     <header class="blog-collection__header">
-        <h1>Eman's Blog</h1>
+        <h1>Eman's Blog!</h1>
     </header>
     <ul class="blog-collection__list">
-        {%- for post in collections.post | reverse -%}
-             {% include 'article-collection-item.njk' %}
+        {# alias converted 'collections.post' var to simply 'posts' #}
+        {# Used to be {%- for post in collection.posts | reverse -%} but now we reverse in frontmatter #}
+        {%- for post in posts -%}
+            {% include 'article-collection-item.njk' %}
         {%- endfor -%}
     </ul>
+
+    <div class="pagination">
+        <ol>
+        {% if pagination.href.previous  %}
+            <li>
+                <a href="{{ pagination.href.previous }}">Previous</a>
+            </li>
+        {% endif %}
+        {% if pagination.href.previous and pagination.href.previous %}
+            <li>
+                <p>{{ pagination.pageNumber }}</p>
+            </li>
+        {% endif %}
+        {# {%- for page in pagination.pages %}
+            {% if loop.index0 < pagination.pageNumber %}
+                <li>
+                    <a href="{{ pagination.hrefs[loop.index0] }}">{{ loop.index }}</a>
+                </li>
+            {% endif %}
+                        {% if pagination.pageNumber < loop.index0 %}
+                <li>
+                    <a href="{{ pagination.hrefs[loop.index0] }}">{{ loop.index }}</a>
+                </li>
+            {% endif %}
+        {%- endfor %} #}
+        {% if pagination.href.next %}
+            <li>
+                <a href="{{ pagination.href.next }}">Next</a>
+            </li>
+        {% endif %}
+        {% if pagination.pageNumber + 1 < pagination.pages.length - 1 %}
+            <li>
+                <a href="{{ pagination.href.last }}">{{ pagination.pages.length - 1 }} (Last Page)</a>
+            </li>
+        {% endif %}
+        </ol>
+    </div>
 </section>
