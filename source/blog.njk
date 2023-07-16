@@ -3,7 +3,7 @@ title: Blog
 layout: template-parts/base.njk
 pagination:
     data: collections.post
-    size: 2
+    size: 4
     alias: posts
     reverse: true
 ---
@@ -25,7 +25,11 @@ pagination:
         <ol>
         {% if pagination.href.previous  %}
             <li>
-                <a href="{{ pagination.href.previous }}">Previous</a>
+                <button class="svg-button">
+                    <a href="{{ pagination.href.previous }}">
+                        <img class="pagination-icon" src="/assets/interface/pagination__arrow-left-1.svg"/>
+                    </a>
+                </button>
             </li>
         {% endif %}
         {% if pagination.href.previous and pagination.href.previous %}
@@ -47,12 +51,21 @@ pagination:
         {%- endfor %} #}
         {% if pagination.href.next %}
             <li>
-                <a href="{{ pagination.href.next }}">Next</a>
+                <button class="svg-button">
+                    <a href="{{ pagination.href.next }}">
+                        <img class="pagination-icon" src="/assets/interface/pagination__arrow-right-1.svg"/>
+                    </a>
+                </button>
             </li>
         {% endif %}
         {% if pagination.pageNumber + 1 < pagination.pages.length - 1 %}
             <li>
-                <a href="{{ pagination.href.last }}">{{ pagination.pages.length - 1 }} (Last Page)</a>
+                <button id="pagination__double-right-arrow-button" class="svg-button">
+                    <a href="{{ pagination.href.last }}">
+                        <img class="pagination-icon" src="/assets/interface/pagination__arrow-button-right-1.svg"/>
+                    </a>
+                </button>
+                {# <a href="{{ pagination.href.last }}">{{ pagination.pages.length - 1 }} (Last Page)</a> #}
             </li>
         {% endif %}
         </ol>
