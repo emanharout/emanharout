@@ -20,6 +20,7 @@ pagination:
         {%- endfor -%}
     </ul>
 
+    {% if pagination.pages.length > 1 %}
     <div class="pagination">
         <ol>
         {% if pagination.href.previous  %}
@@ -56,4 +57,5 @@ pagination:
         {% endif %}
         </ol>
     </div>
+    {% endif %}
 </section>
