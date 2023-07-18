@@ -175,9 +175,13 @@ body {
   width: min(var(--article-text-width), 100vw);
 }
 
-.article-container * {
+.article-container > * {
   word-wrap: break-word;
-  white-space: normal;
+  /* 
+  white-space causes an issue with code blocks where line breaks are ignored.
+  Removing this does not seem to break anything, but if it does, then reintroduce and override the property in code blocks with !important
+   */
+  /* white-space: normal; */
 
   margin-left: var(--outer-horizontal-margin);
   margin-right: var(--outer-horizontal-margin);
@@ -293,4 +297,15 @@ body {
   So I manually adjust the space between these arrow images. If I ever need to change them, just compare the pixels between them via CMD + Shift + 4.
   */
   margin-left: 6px;
+}
+
+pre code {
+  /* display: block removes indentation issue  where first line in code block looks indented */
+  display: block; 
+  /* 
+  white-space changes issue where line breaks were ignored in code blocks
+  commented out because its not needed unless I reintroduce the first two properties (currently commented out) in 
+  .article-container * { ... } (word-wrap and white-space) << this always overrides white-space here, so mark !important
+   */
+    /* white-space: pre !important; */
 }
