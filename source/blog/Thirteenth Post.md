@@ -10,7 +10,7 @@ description: Some lengthy description of the post that runs multiple sentences l
 ![some image](/assets/blog/article-2.jpg)
 
 # Introduction to Swift Metatypes 13
-Metatypes can be difficult to grasp, both in concept and application. My hope is that after reading this, you’ll have mastered the basics of metatypes!
+Metatypes can be difficult to grasp, both in concept and application. My hope is that after reading this, you’ll have mastered the basics of metatypes! [^1]
 
 ## Instances & Types
 
@@ -78,3 +78,5 @@ To summarize:
 * Metatypes allow access to properties, methods, and initializers belonging to the type.
 
 I hope you found this explanation of metatypes useful! We have only scratched the surface, however. For a deeper dive with more examples, please see [Bruno Rocha’s excellent post on Metatypes!]
+
+[^1]: Test footnote
