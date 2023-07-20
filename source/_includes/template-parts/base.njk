@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@400..900&family=Inter:wght@100..900&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="/styles/css/main.css">
+    <link rel="stylesheet" href="/styles/prism/prism.css">
 </head>
 <body>
     {% include "source/_includes/template-parts/header.njk" %}
@@ -17,5 +18,6 @@
      {{ content | safe }}
     </main>
     {% include "source/_includes/template-parts/footer.njk" %}
+    <script src="/styles/prism/prism.js"></script>
 </body>
 </html>
