@@ -298,19 +298,3 @@ body {
   */
   margin-left: 6px;
 }
-
-pre code {
-  /* display: block removes indentation issue  where first line in code block looks indented */
-  display: block;
-  /* 
-  white-space changes issue where line breaks were ignored in code blocks
-  commented out because its not needed unless I reintroduce the first two properties (currently commented out) in 
-  .article-container * { ... } (word-wrap and white-space) << this always overrides white-space here, so mark !important
-   */
-    /* white-space: pre !important; */
-  /* background: var(--primary-color-10);
-  -webkit-overflow-scrolling: touch;
-  overflow-x: scroll;
-  max-width: 100%;
-  min-width: 100px; */
-}
