@@ -1,8 +1,8 @@
 const { DateTime } = require("luxon");
 
 module.exports = function (eleventyConfig) {
-  eleventyConfig.addPassthroughCopy("./source/styles/css/");
-  eleventyConfig.addWatchTarget("./source/styles/css/");
+  eleventyConfig.addPassthroughCopy("./source/styles/");
+  eleventyConfig.addWatchTarget("./source/styles/");
   eleventyConfig.addPassthroughCopy("./source/assets/");
   eleventyConfig.addWatchTarget("./source/assets/");
   eleventyConfig.setNunjucksEnvironmentOptions({
