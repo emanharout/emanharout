@@ -114,4 +114,12 @@ img {
 a {
   text-decoration: none;
 }
+
+p > code,
+li > code {
+  padding: 1px 4px;
+  background-color: var(--primary-color-10);
+  border-radius: 5px;
+  color: var(--code-color);
+}
 /* ### END: Font Setup */
