@@ -256,45 +256,39 @@ body {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  margin: 1rem var(--outer-horizontal-margin);
-  padding: 4px 14px;
+  margin: 2rem var(--outer-horizontal-margin);
+  padding: 4px 0px;
 }
 
-.pagination p {
-  color: var(--grey-10);
-  background-color: var(--primary-color-5);
-  border-radius: 4px;
-
-  padding: 2px 12px;
-  /*
-      The whitespace on the right side of the left arrow icon is greater than the right arrow icon's left side whitespace.
-      As a result, we add less margin on the left side to compensate for the extra whitespace.
-   */
-  margin-left: 13px;
-  margin-right: 16px;
+.pagination__item {
+  /* Add spacing between items */
+  margin: 0px 22px;
 }
 
-.svg-button {
+.pagination__item + .pagination__item {
+  /* Collapse margins of every item that follows an item. This prevents duplicate horizontal margins. */
+  margin-left: 0px;
+}
+
+.pagination button {
   background-color: var(--bg-1);
   border: none;
   cursor: pointer;
 
   display: flex;
   align-items: center;
-  padding: 2px 2px;
-  margin: 0 0px;
+  /* Increase button tap area */
+  padding: 2px 0px;
 }
 
-.pagination-icon {
-  width: 24px;
+.pagination img {
+  max-height: 30px;
 }
 
-#pagination__double-right-arrow-button {
-  /*
-  Adds whitespace between right arrow and double-right arrow.
+.pagination__current-page-number {
+  color: var(--grey-10);
+  background-color: var(--primary-color-5);
+  border-radius: 4px;
 
-  The whitespace around arrow images is inconsistent (e.g. left arrow may have more or less whitespace on its left side vs right arrow's left side)
-  So I manually adjust the space between these arrow images. If I ever need to change them, just compare the pixels between them via CMD + Shift + 4.
-  */
-  margin-left: 6px;
+  padding: 2px 12px;
 }
