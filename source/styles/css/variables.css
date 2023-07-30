@@ -80,4 +80,8 @@
   /* TODO: Remove if still not in Use */
   --article-expanded-content-width: calc(var(--article-text-width) + var( --outer-horizontal-margin) + var(--outer-horizontal-margin));
   --article-full-content-negative-horizontal-margin: calc(var(--outer-horizontal-margin) * -1);
+
+  /* Article Collections */
+  --article-collection-row-gap: 1rem;
+  --article-collection-column-gap: 1rem;
 }
