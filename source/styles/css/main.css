@@ -60,8 +60,17 @@ body {
   padding: 0.75rem;
 }
 
+.main-footer__social-list i {
+	color: var(--social-icon-color);
+}
+
 .main-footer__social-list:hover, .main-footer__social-list:focus {
   text-decoration: none;
+}
+
+.main-footer__social-list i:hover, .main-footer__social-list i:focus {
+  filter: brightness(85%);
+  transition: all 0.2s ease-in-out;
 }
 
 /* ## SITE HEADER */

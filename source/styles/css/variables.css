@@ -66,6 +66,9 @@
   /* Background Color */
 
   --bg-1: hsl(0, 100%, 100%);
+
+  /* Social Media Icon */
+  --social-icon-color: hsl(0, 100%, 100%)
   
   /* Fonts */
   --site-main-nav-font: 'Frank Ruhl Libre', serif;
