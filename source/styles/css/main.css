@@ -37,7 +37,6 @@ body {
   margin-top: 1rem;
   padding: 2rem var(--outer-horizontal-padding);
 }
-/* ### END: Header, Body, Footer Layout */
 
 .main-footer p {
   color: white;
@@ -214,6 +213,12 @@ body {
 
 .blog-collection__header {
   margin: 0 var(--outer-horizontal-margin);
+}
+
+.latest-articles-header {
+  text-align: center;
+
+  margin: 0rem 0rem 2.5rem;
 }
 
 .blog-collection__list {
