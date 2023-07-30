@@ -19,8 +19,8 @@ layout: template-parts/base.njk
     <h2 class="latest-articles-header">Latest Articles</h2>
 </header>
 <ul class="blog-collection__list">
-    {%- for post in collections.post | reverse -%}
-         {% include 'article-collection-item.njk' %}
+    {%- for post in collections.post.slice(-12) | reverse -%}
+        {% include 'article-collection-item.njk' %}
     {%- endfor -%}
 </ul>
 </section>
