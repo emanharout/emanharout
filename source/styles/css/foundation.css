@@ -26,6 +26,7 @@ h1, h2, h3, h4, h5, h6 {
   word-wrap: break-word;
   white-space: normal;
   line-height: 1;
+  color: var(--header-font-color);
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -94,11 +95,16 @@ h6 {
 p {
   margin: 0 0 1rem;
   padding: 0;
+  color: var(--font-color);
 }
 
 /* Remove the bottom-margin of the last paragraph in a container */
 p:last-child, a:last-child {
   margin-bottom: 0;
+}
+
+li {
+  color: var(--font-color);
 }
 
 /* e.g. apply class to paragraphs to remove bottom margin */

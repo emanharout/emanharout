@@ -60,8 +60,10 @@
   --support-secondary-10: hsl(165, 67%, 96%);
 
   /* Font Color */
-  --font-color: hsl(0, 0%, 24%);
-  --code-color: hsl(0, 0%, 8%);
+  --header-font-color: hsl(260, 8%, 15%);
+  --font-color: hsl(260, 8%, 20%);
+  --contrast-text-from-color-color: var(--grey-10);
+  --code-color: hsl(260, 8%, 10%);
 
   /* Background Color */
 

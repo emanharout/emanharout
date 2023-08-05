@@ -39,7 +39,7 @@ body {
 }
 
 .main-footer p {
-  color: white;
+  color: var(--contrast-text-from-color-color);
 
   text-align: center;
 }
@@ -141,7 +141,6 @@ body {
 /* ### About Me */
 .about-me {
   background-color: var(--primary-color-5);
-  color: var(--grey-10);
   
   display: flex;
   flex-direction: column;
@@ -150,6 +149,11 @@ body {
   gap: 1.5rem;
   padding: 2rem var(--outer-horizontal-padding);
   margin: 1.5rem 0;
+}
+
+.about-me h2,
+.about-me p {
+  color: var(--contrast-text-from-color-color);
 }
 
 @media only screen and (min-width: 769px) {
