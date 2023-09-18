@@ -61,7 +61,7 @@ body {
 }
 
 .main-footer__social-list i {
-	color: var(--social-icon-color);
+	color: var(--fg-light);
 }
 
 .main-footer__social-list:hover, .main-footer__social-list:focus {
@@ -69,8 +69,13 @@ body {
 }
 
 .main-footer__social-list i:hover, .main-footer__social-list i:focus {
-  filter: brightness(85%);
+  color: var(--secondary-color-9);
   transition: all 0.2s ease-in-out;
+}
+
+.main-footer__social-list i:active {
+  filter: brightness(85%);
+  transition: all 0.05s ease-in-out;
 }
 
 /* ## SITE HEADER */
@@ -85,11 +90,6 @@ body {
   margin: 1rem var(--outer-horizontal-margin);
   padding: 16px 0px 2px;
   text-align: center;
-}
-
-.logo a {
-  text-decoration: none;
-  color: var(--font-color);
 }
 
 .main-nav ul {
