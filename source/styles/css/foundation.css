@@ -11,13 +11,19 @@ html {
   font-family: var(--body-font);
   font-size: 1.125rem;
 }
-/* ### END: Set HTML Properties */
 
 body {
   margin: 0;
   padding: 0;
   line-height: 1.5;
 }
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+/* ### END: Set HTML Properties */
 
 /* ### Font Setup */
 /* Wrap large headings so they don't overflow from container & break layout */
@@ -110,11 +116,6 @@ li {
 /* e.g. apply class to paragraphs to remove bottom margin */
 .margin-bottom-0 {
   margin-bottom: 0;
-}
-
-img {
-  display: block;
-  max-width: 100%;
 }
 
 a {

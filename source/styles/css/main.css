@@ -263,8 +263,10 @@ body {
 }
 
 .blog-collection__list li {
-  background-color: var(--primary-color-10);
-  border-radius: 10px;
+  background-color: var(--article-card-bg-1);
+  border-radius: 8px;
+  outline: 1px solid var(--grey-9);
+  box-shadow: 0px 3px 10px var(--grey-9);
   
   padding: 12px var(--outer-horizontal-padding);
   max-width: 620px;

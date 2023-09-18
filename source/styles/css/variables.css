@@ -89,4 +89,5 @@
   /* Article Collections */
   --article-collection-row-gap: 1rem;
   --article-collection-column-gap: 1rem;
+  --article-card-bg-1: hsl(0, 100%, 100%);
 }
