@@ -87,7 +87,7 @@
   --article-full-content-negative-horizontal-margin: calc(var(--outer-horizontal-margin) * -1);
 
   /* Article Collections */
-  --article-collection-row-gap: 1rem;
-  --article-collection-column-gap: 1rem;
+  --article-collection-row-gap: 1.5rem;
+  --article-collection-column-gap: 1.5rem;
   --article-card-bg-1: hsl(0, 100%, 100%);
 }
