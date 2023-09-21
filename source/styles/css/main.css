@@ -54,7 +54,7 @@ body {
 }
 
 .main-footer__social-list a {
-  color: white;
+  color: var(--fg-light);
   text-decoration: none;
 
   padding: 0.75rem;

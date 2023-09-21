@@ -71,6 +71,7 @@
   --bg-1: hsl(0, 100%, 100%);
 
   /* Foreground Color */
+  /* Will always be light, even in dark mode */
   --fg-light: hsl(0, 100%, 100%);
   
   /* Fonts */
