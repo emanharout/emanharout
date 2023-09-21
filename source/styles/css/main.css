@@ -11,7 +11,7 @@ body {
 }
 
 .content {
-   /* 1. Content will vertically grow to fill space */
+   /* 1. Content will vertically grow to fill browser viewport height */
    /* 2. Content will not vertically shrink below content size */
    /* Shorthand: flex: 1 0 auto; */
   flex-grow: 1;
@@ -98,8 +98,6 @@ body {
   display: flex;
   flex-direction: column;
   margin: 1rem var(--outer-horizontal-margin);
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
   padding: 0;
 }
 
