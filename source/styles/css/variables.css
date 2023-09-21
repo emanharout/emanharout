@@ -62,6 +62,7 @@
   /* Font Color */
   --header-font-color: hsl(260, 8%, 15%);
   --font-color: hsl(260, 8%, 20%);
+  --font-color-secondary: hsl(252, 2%, 50%);
   --contrast-text-from-color-color: var(--grey-10);
   --code-color: hsl(260, 8%, 10%);
 

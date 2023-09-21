@@ -133,13 +133,13 @@ a:active {
 
 /* Select text range with mouse click + drag */
 ::selection {
-  color: var(--secondary-color-6);
-  background: var(--primary-color-10);
+  color: var(--font-color);
+  background: var(--secondary-color-9);
 }
 
 ::-moz-selection {
-  color: var(--secondary-color-6);
-  background: var(--primary-color-10);
+  color: var(--font-color);
+  background: var(--secondary-color-9);
 }
 
 p > code,

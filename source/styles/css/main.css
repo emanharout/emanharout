@@ -215,6 +215,7 @@ body {
 }
 
 /* Article Collection */
+
 .blog-collection {
   margin: 1.5rem 0rem;
 }
@@ -276,10 +277,14 @@ body {
   }
 }
 
-.blog-collection__list__card__title {
+.blog-collection__list__card .card-title {
   font-size: 1.4rem;
   letter-spacing: 0.6px;
   line-height: 1.25;
+}
+
+.blog-collection__list__card .card-metadata {
+  color: var(--font-color-secondary);
 }
 
 /* PAGINATION */
