@@ -26,16 +26,13 @@ img {
 /* ### END: Set HTML Properties */
 
 /* ### Font Setup */
-/* Wrap large headings so they don't overflow from container & break layout */
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6 {  
   font-family: var(--title-font);
+  text-wrap: balance;
   word-wrap: break-word;
-  white-space: normal;
   line-height: 1;
   color: var(--header-font-color);
-}
 
-h1, h2, h3, h4, h5, h6 {
   margin: 0;
   padding: 0;
 }
