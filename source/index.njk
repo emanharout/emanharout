@@ -15,12 +15,12 @@ layout: template-parts/base.njk
 </section>
 
 <section class="blog-collection"> {# TODO: Add section class name #}
-<header class="blog-collection__header">
-    <h2 class="latest-articles-header">Latest Articles</h2>
-</header>
-<ul class="blog-collection__list">
-    {%- for post in collections.post.slice(-12) | reverse -%}
-        {% include 'article-collection-item.njk' %}
-    {%- endfor -%}
-</ul>
+    <header class="blog-collection__header">
+        <h2 class="latest-articles-header">Latest Articles</h2>
+    </header>
+    <ul class="blog-collection__list">
+        {%- for post in collections.post.slice(-12) | reverse -%}
+            {% include 'article-collection-item.njk' %}
+        {%- endfor -%}
+    </ul>
 </section>
