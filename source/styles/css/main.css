@@ -98,6 +98,8 @@ body {
   display: flex;
   flex-direction: column;
   margin: 1rem var(--outer-horizontal-margin);
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
   padding: 0;
 }
 
@@ -217,7 +219,7 @@ body {
 /* Article Collection */
 
 .blog-collection {
-  margin: 1.5rem 0rem;
+  margin: 1.5rem var(--outer-horizontal-margin);
 }
 
 .blog-collection__header {
@@ -241,7 +243,8 @@ body {
   justify-items: center;
   margin-left: auto;
   margin-right: auto;
-  padding: 0 var(--outer-horizontal-padding);
+  /* Remove browser-added padding */
+  padding-inline-start: 0px;
 }
 
 .blog-collection__list__card {
@@ -250,7 +253,7 @@ body {
   outline: 1px solid var(--grey-9);
   box-shadow: 0px 3px 10px var(--grey-9);
   
-  padding: 20px var(--outer-horizontal-padding);
+  padding: 20px 18px;
   max-width: 620px;
 }
 
@@ -303,7 +306,7 @@ body {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  margin: 2rem var(--outer-horizontal-margin);
+  margin: 2rem 1rem;
   padding: 4px 0px;
 }
 

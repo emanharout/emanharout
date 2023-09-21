@@ -81,6 +81,16 @@
   /* Layout */
   --outer-horizontal-margin: 1rem;
   --outer-horizontal-padding: 1rem;
+
+  @media only screen and (min-width: 480px) {
+  --outer-horizontal-margin: 2rem;
+  --outer-horizontal-padding: 2rem;
+  }
+
+  @media only screen and (min-width: 600px) {
+    --outer-horizontal-margin: 3.5rem;
+    --outer-horizontal-padding: 3.5rem;
+  }
   /* TODO: Pick final article-text-width value based on readability */
   --article-text-width: 66ch;
   /* TODO: Remove if still not in Use */
