@@ -10,7 +10,7 @@ body {
   flex-direction: column;
 }
 
-.content {
+.page-content {
    /* 1. Content will vertically grow to fill browser viewport height */
    /* 2. Content will not vertically shrink below content size */
    /* Shorthand: flex: 1 0 auto; */
@@ -20,12 +20,12 @@ body {
 }
 
 /* Remove top margin of section immediately below nav */
-.content section:first-child {
+.page-content section:first-child {
   margin-top: 0;
 }
 
 /* Remove bottom margin of section immediately above footer */
-.content section:last-child {
+.page-content section:last-child {
   margin-bottom: 0;
 }
 

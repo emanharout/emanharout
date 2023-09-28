@@ -13,8 +13,8 @@ pagination:
         <h1>Eman's Blog!</h1>
     </header>
     <ul class="blog-collection__list">
-        {# alias converted 'collections.post' var to simply 'posts' #}
-        {# Used to be {%- for post in collection.posts | reverse -%} but now we reverse in frontmatter #}
+        {# frontmatter `alias: posts` converted 'collections.post' var to simply 'posts' #}
+        {# Used to be: {%- for post in collection.posts | reverse -%} but now we reverse in frontmatter #}
         {%- for post in posts -%}
             {% include 'article-collection-item.njk' %}
         {%- endfor -%}
