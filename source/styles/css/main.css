@@ -29,6 +29,17 @@ body {
   margin-bottom: 0;
 }
 
+/* Select text range that is highlighted upon mouse click and drag */
+.primary-color-bg-5 ::selection {
+  color: var(--contrast-text-from-color-color);
+  background: var(--secondary-color-7);
+}
+
+::-moz-selection {
+  color: var(--contrast-text-from-color-color);
+  background: var(--secondary-color-7);
+}
+
 .main-footer {
   background-color: var(--primary-color-5);
 
