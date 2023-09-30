@@ -90,6 +90,7 @@ body {
 }
 
 /* ## SITE HEADER */
+
 /* ### Navigation */
 .logo {
   font-family: var(--site-main-nav-font);
@@ -103,7 +104,7 @@ body {
   text-align: center;
 }
 
-.main-nav ul {
+.main-nav .nav-list {
   list-style-type: none;
 
   display: flex;
@@ -112,26 +113,11 @@ body {
   padding: 0;
 }
 
-@media only screen and (min-width: 480px) {
-  .main-nav ul {
-    flex-direction: row;
-    justify-content: center;
-  }
-}
-
-.main-nav li {
+.main-nav .nav-list-item {
   border-radius: 12px;
 }
 
-@media only screen and (min-width: 480px) {
-  .main-nav li {
-    display: inline-block;
-    padding-left: 6px;
-    padding-right: 6px;
-  }
-}
-
-.main-nav a {
+.main-nav .nav-link {
   font-family: var(--site-main-nav-font);
   font-weight: 400;
   font-size: 1.5rem;
@@ -141,6 +127,19 @@ body {
   display: inline-block;
   padding-inline-start: 0px;
   /* padding: 0.35rem; TODO: Move to higher screen size? */
+}
+
+@media only screen and (min-width: 480px) {
+  .main-nav .nav-list {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .main-nav .nav-list-item {
+    display: inline-block;
+    padding-left: 6px;
+    padding-right: 6px;
+  }
 }
 
 /* ## SITE BODY */
