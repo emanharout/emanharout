@@ -1,5 +1,8 @@
 @import "variables.css";
 
+/* This file contains general styling */
+/* All of which is applied to HTML elements instead of classes */
+
 /* ## GENERAL */
 /* ### Set HTML Properties */
 *, *::before, *::after {
@@ -116,8 +119,30 @@ li {
 }
 
 a {
-  color: var(--font-color);
+  color: var(--primary-color-5);
   text-decoration: none;
+  font-weight: 500;
+
+  position: relative;
+}
+
+a::after {
+  /* Need content on pseudoelement otherwise it won't appear */
+  content: '';
+  background-color: currentColor;
+
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  position: absolute;
+
+  transform: scaleX(0);
+  transition: transform 150ms ease-in;
+}
+
+a:hover::after {
+  transform: scaleX(1);
 }
 
 a:hover, a:focus {

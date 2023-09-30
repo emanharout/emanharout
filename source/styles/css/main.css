@@ -104,6 +104,19 @@ body {
   text-align: center;
 }
 
+.logo-link {
+  color: var(--font-color);
+}
+
+.logo-link::after {
+  /* Disable underline animation applied to a:hover::after from appearing */
+  content: none;
+}
+
+.logo-link:hover, .logo-link:focus {
+  color: var(--font-color);
+}
+
 .main-nav .nav-list {
   list-style-type: none;
 
@@ -123,6 +136,7 @@ body {
   font-size: 1.5rem;
   text-decoration: none;
   line-height: 1.5;
+  color: var(--font-color);
   
   display: inline-block;
   padding-inline-start: 0px;
@@ -255,6 +269,15 @@ body {
   text-align: center;
 
   margin: 0rem 0rem 2.5rem;
+}
+
+.card-title-link {
+  color: var(--font-color)
+}
+
+.card-title-link::after {
+  /* Disable underline animation applied to a:hover::after from appearing */
+  content: none;
 }
 
 .blog-collection__list {
