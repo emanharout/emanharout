@@ -94,6 +94,6 @@ To summarize:
 -   To get a metatype instance at runtime, simply pass an instance to `type(of:)`
 -   Metatypes allow access to properties, methods, and initializers belonging to the type.
 
-I hope you found this explanation of metatypes useful! We have only scratched the surface, however. For a deeper dive with more examples, please see [Bruno Rocha’s excellent post on Metatypes!]
+I hope you found this explanation of metatypes useful! We have only scratched the surface, however. For a deeper dive with more examples, please see [Bruno Rocha’s excellent post on Metatypes!](https://swiftrocks.com/whats-type-and-self-swift-metatypes)
 
 [^1]: Test footnote

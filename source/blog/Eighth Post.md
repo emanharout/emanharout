@@ -4,12 +4,13 @@ author: Eman Harout
 date: 2022-08-08
 image: /assets/blog/article-2.jpg
 imageAlt: This is a test
-description: Some lengthy description of the post that runs multiple sentences long goes here.
+description: Some lengthy description of the post that runs multiple sentences long goes here. This one is a bit longer than the average, however.
 ---
 
 ![some image](/assets/blog/article-2.jpg)
 
 # Introduction to Swift Metatypes 8
+
 Metatypes can be difficult to grasp, both in concept and application. My hope is that after reading this, you’ll have mastered the basics of metatypes!
 
 ## Instances & Types
@@ -49,13 +50,14 @@ This seems pointless with `String`, but if you have a class with many subclasses
 Now that we know how to create instances of a metatype, let’s briefly discuss what we’re able to do with them.
 
 ###### Header Six: Application
+
 Metatypes are used to access properties and methods that belong to the type. This includes anything marked as `static`, `class`, and `init`.
 class SomeClass {
-  static let someKey = "0000"
-  
-  init() { ... }
-  
-  static func someMethod() { ... }
+static let someKey = "0000"
+
+init() { ... }
+
+static func someMethod() { ... }
 }
 
 let key = SomeClass.someKey // Shorthand for SomeClass.self.someKey
@@ -71,10 +73,12 @@ let decoder = JSONDecoder()
 decoder.decode(SomeClass.self, from: someData) // now JSON Decoder has access to SomeClass' init method.
 
 ## Conclusion
+
 To summarize:
-* A metatype is simply a type with `.Type` appended to it, e.g. `String.Type`
-* A metatype instance can be specified by appending `.self` to a type, e.g. `String.self`
-* To get a metatype instance at runtime, simply pass an instance to `type(of:)`
-* Metatypes allow access to properties, methods, and initializers belonging to the type.
+
+-   A metatype is simply a type with `.Type` appended to it, e.g. `String.Type`
+-   A metatype instance can be specified by appending `.self` to a type, e.g. `String.self`
+-   To get a metatype instance at runtime, simply pass an instance to `type(of:)`
+-   Metatypes allow access to properties, methods, and initializers belonging to the type.
 
 I hope you found this explanation of metatypes useful! We have only scratched the surface, however. For a deeper dive with more examples, please see [Bruno Rocha’s excellent post on Metatypes!]
