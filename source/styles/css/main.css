@@ -66,9 +66,13 @@ body {
   justify-content: center;
 }
 
-.main-footer__social-list a {
+.main-footer__social-list .social-link {
   color: var(--fg-light);
   text-decoration: none;
+}
+
+.main-footer__social-list  .social-link::after {
+  content: none;
 }
 
 .main-footer__social-list i {
@@ -141,6 +145,12 @@ body {
   display: inline-block;
   padding-inline-start: 0px;
   /* padding: 0.35rem; TODO: Move to higher screen size? */
+}
+
+.nav-link::after {
+    /* disables transition animations on a and a::after elements inside navigation */
+    /* See animation on a and a::after in foundation.css */
+  content: none;
 }
 
 @media only screen and (min-width: 480px) {
