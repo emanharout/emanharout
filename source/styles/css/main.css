@@ -121,6 +121,54 @@ body {
   color: var(--font-color);
 }
 
+/* BEGIN - Highlight Active Navigation Page / Hovered Navigation List Item */
+
+/* We position each pseudo-element relative to its nav-list-item (nav li element) */
+.nav-list-item {
+  position: relative;
+}
+
+/*
+For the active nav-list-item, we skip the animation by setting transition time to 0ms
+and force its display by setting scaleX to 1.
+*/
+.active-nav-item::after {
+  /* 
+  Must add content for pseudoelement to appear.
+  Set to `none`  to remove empty string as content and hide pseudoelement.
+  */
+  content: '';
+  background-color: var(--primary-color-5);
+  border-radius: 20px;
+
+  left: 0px;
+  bottom: 0px;
+  width: 100%;
+  height: 5px;
+  position: absolute;
+}
+
+.on-hover-nav-item-animation::after {
+  content: '';
+  background-color: var(--primary-color-5);
+  border-radius: 20px;
+
+  left: 0px;
+  bottom: 0px;
+  width: 100%;
+  height: 5px;
+  position: absolute;
+
+  transform: scaleX(0);
+  transition: transform 250ms ease-in;
+}
+
+.on-hover-nav-item-animation:hover::after {
+  transform: scaleX(1);
+}
+
+/* END - Highlight Active Navigation Page / Hovered Navigation List Item */
+
 .main-nav .nav-list {
   list-style-type: none;
 
@@ -128,10 +176,6 @@ body {
   flex-direction: column;
   margin: 1rem var(--outer-horizontal-margin);
   padding: 0;
-}
-
-.main-nav .nav-list-item {
-  border-radius: 12px;
 }
 
 .main-nav .nav-link {
