@@ -5,6 +5,8 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addWatchTarget("./source/styles/");
   eleventyConfig.addPassthroughCopy("./source/assets/");
   eleventyConfig.addWatchTarget("./source/assets/");
+  eleventyConfig.addPassthroughCopy("./source/javascript/");
+  eleventyConfig.addWatchTarget("./source/javascript/");
   eleventyConfig.setNunjucksEnvironmentOptions({
     throwOnUndefined: true,
     autoescape: false,
